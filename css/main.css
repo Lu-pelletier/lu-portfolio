@@ -1,0 +1,94 @@
+/******************* TEXT ********************/
+
+* {
+  --title-size: 8em;
+  --title-color: var(--white);
+
+  --text-size: 1em;
+  --text-color: var(--white);
+
+  --menu-size: 5em;
+  --menu-color: var(--white);
+
+
+  --font-regular: "Avenir Next Regular";
+  --font-medium: "Avenir Next Medium";
+  --font-extra: "Neuro-Bold";
+}
+
+/******************* COLORS ********************/
+
+* {
+  --black: #0e0e0e;
+  --white: #ffffff;
+  --grey: #868686;
+  --purple: #8a3b8e;
+  --turquoise: #45cfdd;
+}
+
+* {
+  --background: var(--black);
+}
+
+/******************* LOGO ********************/
+
+.logo {
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/logo/svg/logo_fond_noir.svg);
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 4vw;
+  top: 6vh;
+}
+
+/******************* BODY ********************/
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  display: flex;
+	flex-direction: row;
+}
+
+/******************* VERTICAL MENU ********************/
+
+.vertical-bar {
+  height: 80vh;
+  width: 10vw;
+  margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  justify-content: space-around;
+}
+
+.vertical-item {
+  font-family: var(--font-regular);
+  font-size: var(--text-size);
+  text-decoration: none;
+  color: var(--menu-color);
+}
+
+/******************* MENTIONS ********************/
+
+.mentions {
+  font-family: var(--font-regular);
+  color: var(--text-color);
+  position: fixed;
+  right: 4vw;
+  top: 6vh;
+}
+
+/******************* RESPONSIVE ********************/
+
+@media (orientation: portrait) {
+
+}

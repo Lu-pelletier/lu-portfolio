@@ -1,0 +1,35 @@
+canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+h1 {
+  font-family: var(--font-extra);
+  text-transform: uppercase;
+  color: var(--menu-color);
+  letter-spacing: .2rem;
+}
+
+.text-intro {
+  z-index: 4;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+p {
+  font-family: var(--font-regular);
+  font-size: var(--text-size);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+
+}

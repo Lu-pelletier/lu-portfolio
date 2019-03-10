@@ -1,0 +1,77 @@
+/* PAGE TITLE  */
+
+.content-section {
+	position: relative;
+	text-align: left;
+	padding: 0 6vmax;
+}
+
+.content-text {
+	position: absolute;
+	left: -5vw;
+	padding-left: 5vmax;
+	z-index: 1000;
+	line-height: 0.8;
+  color: var(--title-color);
+	font-size: var(--title-size);
+	font-family: var(--font-medium);
+	letter-spacing: 0.08em;
+	margin: 0;
+	line-height: 1;
+  width: 60vw;
+	margin-top: 50vh;
+	text-shadow: 1px 1px 2px var(--black);
+}
+
+.align-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.content-img img {
+	position: relative;
+	width: 800px;
+	/* height: 450px; */
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	margin-left: 10vw;
+}
+
+.content-img video {
+	position: relative;
+	width: 800px;
+	height: 450px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	margin-left: 10vw;
+}
+
+img:hover {
+	box-shadow: 20px 20px 0 var(--purple);
+	cursor: crosshair;
+}
+.content-description {
+	width: 800px;
+	margin-left: 10vw;
+	font-family: var(--font-regular);
+	font-size: var(--text-size);
+	color: var(--text-color);
+}
+
+.content-description a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.content-description a:hover {
+	text-decoration: underline;
+}
+
+
+/******************* RESPONSIVE ********************/
+
+@media (orientation: portrait) {
+
+	
+
+}

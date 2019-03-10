@@ -1,0 +1,18 @@
+/* *********************** MAQUETTE ********************* */
+
+.img-position {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5vh;
+  margin-top: 15vh;
+}
+
+.img-position img {
+  width: 60vw;
+  justify-content: center;
+  -webkit-box-shadow: 10px 10px 20px 0 var(--shadow);
+  -moz-box-shadow: 10px 10px 20px 0 var(--shadow);
+  box-shadow: 10px 10px 20px 0 var(--shadow);
+}

@@ -1,0 +1,158 @@
+/******************* LANDING PAGE ********************/
+
+body {
+  overflow: hidden;
+}
+
+.landing {
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: var(--background);
+  transition: transform 1500ms;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing.invisible {
+  transform: translateY(-100vh);
+}
+
+/* TITLE LANDING PAGE */
+
+.begin-adventure {
+  font-family: var(--font-extra);
+  text-transform: uppercase;
+  color: var(--menu-color);
+  letter-spacing: .2rem;
+  margin-top: 9vh;
+  margin-left: 2vw;
+}
+
+/* BEAR */
+
+#bear {
+  height: 515.081px;
+  width: 882.733px;
+  margin: auto;
+  margin-top: 12vh;
+  margin-left: 5vw;
+
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  left: 10vw;
+  -webkit-mask: url(../img/grizzly.svg) no-repeat 50% 50%;
+  mask: url(../img/grizzly.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.icon-bear {
+  background: url(../img/borealis_2.gif);
+  background-size: cover;
+}
+
+/******************* HOMEPAGE ********************/
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 45vw;
+}
+
+.menu-item {
+  line-height: 2;
+  font-size: var(--menu-size);
+  font-family: var(--font-medium);
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.shadow {
+  text-shadow: -10px -10px 0 var(--purple);
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.shadow:hover {
+  text-shadow: 10px 10px 0 var(--turquoise);
+}
+
+
+/******************* RESPONSIVE ********************/
+
+@media (orientation: portrait) {
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .begin-adventure {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #bear {
+    display: none;
+  }
+
+  .vertical-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 10vh;
+    left: 25vw;
+    height: 30vh;
+    width: 50vw;
+  }
+
+  .mentions {
+    top: 0;
+  }
+
+  .text-vertical {
+    display: none;
+  }
+
+  .menu {
+    margin-left: 5vw;
+    margin-top: 30vh;
+  }
+
+  .menu-item {
+    font-size: 50px;
+  }
+
+
+}

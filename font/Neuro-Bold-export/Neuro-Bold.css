@@ -1,0 +1,6 @@
+
+@font-face {
+    font-family:"Neuro-Bold";
+    src:url("Neuro-Bold.woff2") format("woff2"),url("Neuro-Bold.woff") format("woff"),url("Neuro-Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
